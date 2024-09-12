@@ -1,0 +1,27 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "server": "npx json-server db.json",
+    "dev": "concurrently \"npx json-server db.json\" \"set PORT=3011 && nuxt dev\"",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.5.4",
+    "concurrently": "^8.2.2",
+    "json-server": "^1.0.0-beta.2",
+    "nuxt": "^3.13.0",
+    "vue": "latest",
+    "axios": "^1.5.0",
+    "vue-final-modal": "^4.5.4",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.78.0"
+  }
+}
+
